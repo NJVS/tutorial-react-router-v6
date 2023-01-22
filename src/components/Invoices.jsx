@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 
 const invoices = [
   {
@@ -52,7 +52,10 @@ const Invoices = () => {
           ))}
         </ul>
       </aside>
-      <section></section>
+      <section>
+        <h3>Invoice</h3>
+        <Outlet />
+      </section>
     </main>
   )
 }
