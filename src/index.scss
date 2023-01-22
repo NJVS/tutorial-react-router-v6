@@ -52,6 +52,19 @@ nav {
   }
 }
 
+main.container {
+  h1 {
+    margin-bottom: 0.375rem;
+    color: #444444;
+    text-align: center;
+  }
+
+  p {
+    color: #777777;
+    text-align: center;
+  }
+}
+
 main.invoices {
   display: grid;
   grid-template-columns: 0.5fr 1.5fr;
