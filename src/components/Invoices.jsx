@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const invoices = [
   {
@@ -35,7 +36,24 @@ const invoices = [
 
 const Invoices = () => {
   return (
-    <div>Invoices</div>
+    <main className='invoices container'>
+      <aside>
+        <h3>Names</h3>
+        <ul>
+          {invoices.map(invoice => (
+            <li key={invoice.number}>
+              <Link
+                key={invoice.number}
+                to={`/invoices/${invoice.number}`}
+              >
+                {invoice.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </aside>
+      <section></section>
+    </main>
   )
 }
 
