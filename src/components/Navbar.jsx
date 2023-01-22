@@ -8,7 +8,7 @@ const Navbar = () => {
         <h2>React Hook</h2>
         <ul>
           <li><Link to="/invoices">Invoices</Link></li>
-          <li><Link to="/Expenses">Expenses</Link></li>
+          <li><Link to="/expenses">Expenses</Link></li>
         </ul>
       </div>
     </nav>
