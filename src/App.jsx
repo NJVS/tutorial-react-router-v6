@@ -8,8 +8,19 @@ function App() {
     <>
       <Navbar />
       <Routes>
+        <Route path='/' element={
+          <main className='container'>
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptatum sed maiores vel architecto omnis suscipit, est eum non ad mollitia obcaecati accusamus quod aperiam voluptatem cumque, molestiae neque libero inventore impedit odio. Excepturi, esse nulla! Reprehenderit, deserunt accusamus assumenda laudantium, saepe aspernatur reiciendis minima molestiae earum necessitatibus quas aliquid!</p>
+          </main>
+        } />
         <Route path='/invoices' element={<Invoices />} />
         <Route path='/expenses' element={<Expenses />} />
+        <Route path='*' element={
+          <main className='container'>
+            <h1>Page not found</h1>
+          </main>
+        } />
       </Routes>
     </>
   );
