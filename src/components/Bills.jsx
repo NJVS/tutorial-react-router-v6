@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import { useParams } from 'react-router-dom';
 
 const Bills = () => {
+  const { invoiceID } = useParams();
+
   return (
-    <div className='invoice-item'>Invoice No.1234</div>
+    <div className='invoice-item'>Invoice No.{invoiceID}</div>
   )
 }
 
