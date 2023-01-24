@@ -101,7 +101,23 @@ main.invoices {
 
   section {
     .invoice-item {
+      width: 300px;
+      margin: auto;
       padding: 2rem;
+      border: 1px solid #bbbbbb;
+      border-radius: 5px;
+      text-align: center;
+
+      h3,
+      span {
+        margin: 0;
+        color: #444444;
+        font-weight: bold;
+      }
+
+      h2 {
+        margin-bottom: 2rem;
+      }
     }
   }
 }
