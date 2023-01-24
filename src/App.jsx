@@ -16,6 +16,9 @@ function App() {
           </main>
         } />
         <Route path='/invoices' element={<Invoices />}>
+          <Route index element={
+            <h2>Please Select Invoice...</h2>
+          } />
           <Route path=':invoiceID' element={<Bills />} />
         </Route>
         <Route path='/expenses' element={<Expenses />} />
