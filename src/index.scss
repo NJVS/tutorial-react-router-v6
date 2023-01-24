@@ -100,6 +100,11 @@ main.invoices {
   }
 
   section {
+    >h2 {
+      margin: 3rem 0;
+      text-align: center;
+    }
+
     .invoice-item {
       width: 300px;
       margin: auto;
