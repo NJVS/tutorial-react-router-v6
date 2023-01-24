@@ -95,6 +95,10 @@ main.invoices {
         &:hover {
           color: #444444;
         }
+
+        &.active {
+          color: #3a3cdd;
+        }
       }
     }
   }
